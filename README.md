@@ -1,6 +1,10 @@
+# Polymath AI Task
+
+This repository contains the code for the Polymath AI Task project.
+
 ## Project Description
 
-The project is a web application built using Next.js, a React framework for server-side rendering. It allows users to view and select products from a list and save their selections to a Firebase database. The project also includes Google login integration for authentication.
+The project is a web application built using Next.js, a React framework for server-side rendering. It allows users to view and select products from a list and save their selections to a Firebase database. The project also includes Firebase Google Authentication for user login.
 
 ## Getting Started
 
@@ -30,11 +34,12 @@ To run the development server, follow these steps:
    npm run dev
    ```
 
+
    The application will be accessible at [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Code Features
 
-- Google Login Integration: The application allows users to log in using their Google accounts. It utilizes the `react-google-login` package to handle the login process.
+- Firebase Google Authentication: The application utilizes Firebase Authentication for user login using Google accounts. Users can log in using their Google credentials, and their login state is managed by Firebase.
 
 - Product Selection: Users can select individual products by checking the corresponding checkboxes. They can also use the "Select All" button to select all available products or deselect them if already selected.
 
@@ -42,19 +47,21 @@ To run the development server, follow these steps:
 
 - Toast Notifications: Toast notifications from the `react-toastify` package are displayed to provide feedback to the user when data is successfully saved or when an error occurs.
 
-- Logout Functionality: The application includes a logout button that clears the login cookies and redirects the user to the login page.
+- Logout Functionality: The application includes a logout button that signs the user out from Firebase Authentication and redirects them to the login page.
+
+- Tailwind CSS: The project utilizes Tailwind CSS for styling, providing a responsive design that adapts to different screen sizes and devices.
 
 ## Assumptions
 
 The code assumes the following:
 
-1. Google Sign-In API: The setup and configuration of the Google Sign-In API have been completed outside of this codebase.
+1. Firebase Configuration: The Firebase configuration settings are properly set up in the project. This includes adding the Firebase configuration object in the appropriate file and enabling Google Authentication in the Firebase console.
 
 2. React Context and API Data: The code assumes that the `AppContext` is correctly implemented and provides the `apiData` array containing the products fetched from an API.
 
-3. Firebase Database Integration: It is assumed that the Firebase database integration is set up correctly and that the provided Firebase API endpoint (`https://my-internship-11782-default-rtdb.firebaseio.com/users.json`) is valid.
+3. Firebase Realtime Database Integration: It is assumed that the Firebase Realtime Database integration is set up correctly and that the provided Firebase API endpoint (`https://my-internship-11782-default-rtdb.firebaseio.com/users.json`) is valid.
 
-4. UI Styling: The code assumes that the required UI styling classes and components, such as `bg`, `px`, `rounded`, and `text`, are defined and imported correctly from the respective libraries or CSS files.
+4. UI Styling: The code assumes that the required UI styling classes and components from Tailwind CSS are defined and imported correctly.
 
 Please ensure that these assumptions are met and make any necessary adjustments to the code and configurations to fit your specific requirements.
 
@@ -71,6 +78,5 @@ You can also check out [the Next.js GitHub repository](https://github.com/vercel
 
 The easiest way to deploy a Next.js app is by using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js. Please refer to the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details on deploying your application.
 
----
-
-This README file provides an overview of the Polymath AI Task project, highlights its features and assumptions, and offers instructions for running and deploying the
+Live Host
+The live hosted version of the application can be accessed at [check](https://polymath-ai-task-huleshjangde.vercel.app)
