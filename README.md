@@ -53,15 +53,13 @@ To run the development server, follow these steps:
 
 ## Assumptions
 
-The code assumes the following:
+1. Firebase Configuration: This includes adding the Firebase configuration object in the appropriate file and enabling Google Authentication in the Firebase console.
 
-1. Firebase Configuration: The Firebase configuration settings are properly set up in the project. This includes adding the Firebase configuration object in the appropriate file and enabling Google Authentication in the Firebase console.
+2. React useContext and API Data: implemented and provides the `apiData` array containing the products fetched from an API.
 
-2. React Context and API Data: The code assumes that the `AppContext` is correctly implemented and provides the `apiData` array containing the products fetched from an API.
+3. Firebase Realtime Database Integration: the provided Firebase API endpoint (`https://my-internship-11782-default-rtdb.firebaseio.com/users.json`) is valid.
 
-3. Firebase Realtime Database Integration: It is assumed that the Firebase Realtime Database integration is set up correctly and that the provided Firebase API endpoint (`https://my-internship-11782-default-rtdb.firebaseio.com/users.json`) is valid.
-
-4. UI Styling: The code assumes that the required UI styling classes and components from Tailwind CSS are defined and imported correctly.
+4. UI Styling: UI styling classes and components from Tailwind CSS .
 
 Please ensure that these assumptions are met and make any necessary adjustments to the code and configurations to fit your specific requirements.
 
