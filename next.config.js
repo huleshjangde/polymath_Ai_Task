@@ -1,3 +1,4 @@
+
 // next.config.js
 module.exports = {
     images: {
@@ -7,6 +8,10 @@ module.exports = {
           hostname: 'fakestoreapi.com',
         
         },
+        {
+            protocol : 'https',
+            hostname : 'www.freepnglogos.com'
+        }
       ],
     },
   }

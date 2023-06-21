@@ -5,7 +5,7 @@ export function middleware(request: NextRequest) {
     const url = request.nextUrl.clone();
     const isLoggedIn = request.cookies.get('isLoggedIn')
 if(!isLoggedIn){
-    if (request.nextUrl.pathname.startsWith('/products')) {
+    if (request.nextUrl.pathname.startsWith('/Products')) {
         return NextResponse.rewrite(new URL('/Login', request.url))
       }
   return NextResponse.redirect(new URL('/Login', request.url))
@@ -13,7 +13,7 @@ if(!isLoggedIn){
 
 if(isLoggedIn){
     if (request.nextUrl.pathname.startsWith('/')) {
-        return NextResponse.rewrite(new URL('/products', request.url))
+        return NextResponse.rewrite(new URL('/Products', request.url))
       }
 }
 
@@ -21,5 +21,5 @@ if(isLoggedIn){
 }
  
 export const config = {
-  matcher: ['/products', '/'],
+  matcher: ['/Products', '/'],
 }

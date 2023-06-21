@@ -6,7 +6,7 @@ import Cookies from 'js-cookie';
 import Image from 'next/image'
  
 
-const products = () => {
+const Products = () => {
   //api data 
   const apiData = useContext(AppContext);
  const [selectedProducts, setSelectedProducts] = useState([]);
@@ -119,4 +119,4 @@ const products = () => {
   );
 };
 
-export default products;
+export default Products;
